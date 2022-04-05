@@ -1,0 +1,14 @@
+postgres.ini.secure
+*.pyc
+*.sh
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.odt
+*.ods
+*.pdf
+*.sh
+*.drawio
+*.xcf
+

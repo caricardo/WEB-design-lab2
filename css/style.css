@@ -1,0 +1,326 @@
+/*
+ * Globals
+ */
+
+/*html {
+	overflow: hidden;
+}*/
+
+@font-face {
+	font-family: "XtrudeRegular";
+	src: url("/fonts/xtrude/XtrudeRegular.ttf");
+}
+
+@font-face {
+	font-family: "GameOfSquidsRegular";
+	src: url("/fonts/game-of-squids/Game Of Squids.ttf");
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+	color: #333;
+	text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+/*.dbody {
+	text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+	box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}*/
+
+.cover-container {
+	max-width: 42em;
+}
+
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container, nav, .navbar, .fill-space{
+	display: flex;
+	flex-direction: column;
+/*	height:100vh;
+	height: calc(100% - 56px) */
+	margin: 0;
+	padding: 0;
+ }
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.no-margin {
+	margin: 0 !important;
+}
+
+html, body {
+	margin:0px;
+	height:100%;
+}
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+	padding: .25rem 0;
+	font-weight: 700;
+	color: rgba(255, 255, 255, .5);
+	background-color: transparent;
+	border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+	border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+	margin-left: 1rem;
+}
+
+.nav-masthead .active {
+	color: #fff;
+	border-bottom-color: #fff;
+}
+
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+
+	.vertical-center-row {
+		display: flex;
+		align-items: center !important;
+		vertical-align: middle !important;
+	}
+}
+
+/*body {
+		display: flex;
+		flex-direction: column;
+		height:100vh;
+		margin: 0;
+		padding: 0;
+}*/
+
+
+/* Main styles */
+
+.calculator-body {
+	background-image: url(/imgs/istockphoto-1344090268-170667a.jpg);
+}
+
+.calculator-signin-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+
+.calculator-navbar {
+	/*background-color: #202020;*/
+}
+
+.calculator-navbar-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+
+.calculator-navbar-logo {
+	height: 56px;
+	width: 56px;
+	border-radius: 10%;
+	fill: white;
+}
+
+.calculator-main-logo {
+	font-size: calc(100% + 8vw + 1vh);
+	font-family: 'GameOfSquidsRegular';
+	color: orange;
+	text-shadow: white 5px 5px 0, white -5px -5px 0, red -5px 5px 0, red 5px -5px 0;
+}
+
+.calculator-main-logo-subtext {
+	font-size: calc(100% + 2vw + 1vh);
+	font-family: "Liberation Mono";
+	text-shadow: black 4px 5px 0;
+}
+
+.calculator-footer {
+	/*background-color: #202020;*/
+}
+
+.calculator-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+.calculator-footer-text {
+	font-family: "Liberation Mono";
+	font-size: 16pt;
+}
+
+
+/*   */
+
+.register-termsofservice-text {
+	font-size: calc(30% + 1vw + 0vh);
+}
+
+
+/*   */
+
+
+.form-signin {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+}
+
+.form-signin .checkbox {
+	font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+	z-index: 2;
+}
+
+.form-signin input[type="email"] {
+	margin-bottom: -1px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+	margin-bottom: 10px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+
+/* about page styles  */
+
+.calculator-about-logo {
+	font-size: calc(100% + 4vw + 1vh);
+	font-family: 'GameOfSquidsRegular';
+	color: orange;
+	text-shadow: white 5px 5px 0, white -5px -5px 0, red -5px 5px 0, red 5px -5px 0;
+}
+
+.calculator-about-logo-subtext {
+	font-size: calc(100% + 1vw + 1vh);
+	font-family: "Liberation Mono";
+	text-shadow: black 4px 5px 0;
+}
+
+
+
+/* calculator  */
+
+.calculator-bit-block {
+
+}
+
+.calculator-bit {
+	width: 50%;
+	height: 100%;
+}
+
+.btn-sq-lg {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.btn-sq {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.btn-sq-sm {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+.btn-sq-xs {
+  width: 25px !important;
+  height: 25px !important;
+}
+
+/*.calculator-container {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 4px;
+	background-color: #2121FF;
+	padding: 4px;
+	border-radius: 5px;
+	max-width: 360px;
+	font-family: "Liberation Mono";
+}
+
+.item {
+	background-color: #B3E5FC;
+	color: #000;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 22px;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.calculator-form {
+	max-width: 100%;
+}
+
+.calculator-input {
+	width: 100%;
+	height: 60px;
+	border: none;
+	font-size: 30px;
+	outline: none;
+	text-align: right;
+}
+.input {
+	grid-column: 1/-1;
+	padding: 0;
+}
+.clean {
+	grid-column: 1/3;
+	background-color: #0288d1;
+}
+.back {
+	grid-column: 3/-1;
+}
+.equal {
+	grid-column: 4;
+	grid-row: 6/8;
+	background-color: #bdbdbd;
+}
+.zero {
+	grid-column: 1/3;
+}
+
+*/
