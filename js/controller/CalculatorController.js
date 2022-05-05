@@ -2,7 +2,7 @@
 // import CalculatorModel from "../model/CalculatorModel.js";
 // import CalculatorView from './view/CalculatorView.js';
 
-export default class Controller {
+export default class CalculatorController {
 	constructor(calculatorModel, calculatorView) {
 		this.calculatorModel = calculatorModel;
 		this.calculatorView = calculatorView;

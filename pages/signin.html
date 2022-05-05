@@ -38,26 +38,26 @@
 				</h1>
 
 				<div class="form-floating">
-					<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-					<label for="floatingInput" class="text-dark">
+					<input type="email" class="form-control" id="email_input" placeholder="name@example.com">
+					<label for="email_input" class="text-dark">
 						Email address
 					</label>
 				</div>
 
 				<div class="form-floating">
-					<input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-					<label for="floatingPassword" class="text-dark">
+					<input type="password" class="form-control" id="password_input" placeholder="Password">
+					<label for="password_input" class="text-dark">
 						Password
 					</label>
 				</div>
 
 				<div class="checkbox m-2 mb-3">
-					<input type="checkbox" value="remember-me" style="transform : scale(1.5);">
+					<input type="checkbox" value="remember-me" style="transform : scale(1.5);" id="remember_me_input">
 					<label class="text-center align-middle">
 						Remember me
 					</label>
 				</div>
-					<button class="w-100 btn btn-lg btn-warning" type="submit">
+					<button class="w-100 btn btn-lg btn-warning" type="submit" id="signin_button">
 						Sign in
 					</button>
 				</form>
@@ -80,5 +80,6 @@
 	</footer>
 
 	<script type="javascript" src="/js/bootstrap.bundle.min.js"></script>
+	<script type="module" src="/js/signin.js"></script>
 </html>
 

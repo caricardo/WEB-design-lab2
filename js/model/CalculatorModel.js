@@ -1,14 +1,11 @@
 export default class CalculatorModel {
 	constructor() {
-
 		//let result = this.initOnModelChange();
 		this.id = Math.round(Math.random() * 100000).toString();
 		this.bitwidget_values = new Array();
 		this.bitwidget_state = false;
 		this.calculator_input = document.getElementById("calculator_input");
 		this.calculator_input_prev = this.calculator_input.value;
-
-
 		// return this;
 		// console.log("CalculatorModel constructor", this)
 	}

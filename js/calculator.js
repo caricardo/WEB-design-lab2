@@ -1,12 +1,12 @@
 import CalculatorModel from './model/CalculatorModel.js';
 import CalculatorView from './view/CalculatorView.js';
-import Controller from './controller/Controller.js';
+import CalculatorController from './controller/CalculatorController.js';
 
 
 var calculatorModel = new CalculatorModel();
 var calculatorView = new CalculatorView(calculatorModel);
 
-var controller = new Controller(calculatorModel, calculatorView);
+var controller = new CalculatorController(calculatorModel, calculatorView);
 
 
 window.controller = controller

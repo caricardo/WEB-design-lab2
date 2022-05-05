@@ -1,20 +1,12 @@
-export default class User {
-	constructor(first_name, birth_date, sex, email, password) {
-		this.id = Math.round(Math.random() * 100000).toString();
-		this.first_name = first_name
-		this.birth_date = birth_date
-		this.sex = sex
-		this.email = email
-		this.password = password
+export default class UserAboutModel {
+	constructor(id, key, value) {
+		this.id = id;
+		this.key = key;
+		this.value = value;
 		this.done = false;
 
-
+		this.onChangeCallback = null;
 		return this.initOnModelChange();
-	}
-
-	toggleDone() {
-		this.done = !this.done;
-		return this.done;
 	}
 	
 	setOnChangeCallback() {
@@ -31,5 +23,4 @@ export default class User {
 		}
 		return new Proxy(this, handler);
 	}
-
 }
